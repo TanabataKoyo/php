@@ -4,9 +4,9 @@
 
 <?php
 if(isset($_POST['colorpalatte'])) {
-    $dsn = 'mysql:dbname=color_php;host=localhost';
+    $dsn = 'mysql:dbname=color_php;host=mysql-color';
     $user     = 'root';
-    $password = '';
+    $password = 'root';
     // DBへ接続
     try{
 
@@ -31,9 +31,9 @@ if(isset($_POST['colorpalatte'])) {
 ?>
 <?php
 if(isset($_POST['delete'])) {
-    $dsn = 'mysql:dbname=color_php;host=localhost';
+    $dsn = 'mysql:dbname=color_php;host=mysql-color';
     $user     = 'root';
-    $password = '';
+    $password = 'root';
     // DBへ接続
     try{
         $PDO = new PDO($dsn, $user, $password);
@@ -73,9 +73,9 @@ if(isset($_POST['delete'])) {
     <div class="container-fluid">
         <div class="flex">
             <?php 
-                $dsn = 'mysql:dbname=color_php;host=localhost';
+                $dsn = 'mysql:dbname=color_php;host=mysql-color';
                 $user     = 'root';
-                $password = '';
+                $password = 'root';
                 // DBへ接続
                 try{
                     $PDO = new PDO($dsn, $user, $password);

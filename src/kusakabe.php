@@ -5,9 +5,9 @@
 
 <?php
 if(isset($_POST['colorname'])) {
-    $dsn = 'mysql:dbname=color_php;host=localhost';
+    $dsn = 'mysql:dbname=color_php;host=mysql-color';
     $user     = 'root';
-    $password = '';
+    $password = 'root';
     // DBへ接続
     try{
         $PDO = new PDO($dsn, $user, $password);
@@ -38,9 +38,9 @@ if(isset($_POST['colorname'])) {
 ?>
 <?php
 if(isset($_POST['delete'])) {
-    $dsn = 'mysql:dbname=color_php;host=localhost';
+    $dsn = 'mysql:dbname=color_php;host=mysql-color';
     $user     = 'root';
-    $password = '';
+    $password = 'root';
     // DBへ接続
     try{
         $PDO = new PDO($dsn, $user, $password);
@@ -70,9 +70,9 @@ if(isset($_POST['delete'])) {
     <form class="form" style="padding: 10px; margin-top: 16px;" method="POST" action="kusakabe.php">
       <select class="select" name="colorname">
         <option hidden>選択してください</option>
-          <?php $dsn = 'mysql:dbname=color_php;host=localhost';
+          <?php $dsn = 'mysql:dbname=color_php;host=mysql-color';
           $user     = 'root';
-          $password = '';
+          $password = 'root';
           // DBへ接続
           try{
               $PDO = new PDO($dsn, $user, $password);
@@ -120,9 +120,9 @@ if(isset($_POST['delete'])) {
   </thead>
   <tbody>
   <?php 
-  $dsn = 'mysql:dbname=color_php;host=localhost';
+  $dsn = 'mysql:dbname=color_php;host=mysql-color';
   $user     = 'root';
-  $password = '';
+  $password = 'root';
   // DBへ接続
   try{
       $PDO = new PDO($dsn, $user, $password);
